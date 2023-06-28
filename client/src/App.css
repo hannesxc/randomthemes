@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #59344F;
+  color: wheat;
+}
+
+.mainDiv {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents {
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+input {
+  width: 16px;
+  height: 16px;
+}
+
+.text p {
+  margin: 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+button, select, option, label {
+  cursor: pointer;
+}
+
+button {
+  color: beige;
+  background-color: #291711;
+  border: 0;
+  padding: 13px;
+  border-radius: 10px;
+}
+
+select {
+  color: inherit;
+  background-color: inherit;
+  margin-left: 15px;
+  border: 0;
+}
+
+button:focus, select:focus {
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.palette {
+  margin: 20px;
+  height: 200px;
+  display: flex;
+  gap: 20px;
+}
+
+.bar {
+  width: 65px;
+}
+
+.bar:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
