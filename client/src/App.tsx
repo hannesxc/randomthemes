@@ -1,6 +1,16 @@
 import { useState } from 'react';
 import './App.css';
 
+interface CSInterface {
+  evalScript(script: string, callback?: (result?: any) => void): void;
+}
+
+declare global {
+  interface window {
+    CSInterface: CSInterface;
+  }
+}
+
 function App() {
   const [palette, setPalette] = useState<number[][]>(Array(5).fill([255, 255, 255]));
   const [ext, setExt] = useState<string>('ai');
@@ -8,8 +18,7 @@ function App() {
   const [color, setColor] = useState<number[]>([255, 255, 255]);
   const themes: string[] = ["Black & White", "Aesthetic", "Vintage", "Minimalistic", "Futuristic", "Abstract", "Playful"];
 
-  // @ts-ignore
-  const CSI = new window.CSInterface();
+  const CSI: CSInterface = new (window as any).CSInterface();
 
   // Fill an array with 3 random values b/w [0, 255]
   const randomizeColors = (): number[] => {

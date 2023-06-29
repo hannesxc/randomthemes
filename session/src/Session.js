@@ -26,9 +26,9 @@ class Session {
     init() {
         // init before everything so I can intercept console.log
         this._managers.init()
-        this.log('session is initing...')
+        this.log('Session is initiating...')
         // load jsx file dynamically
-        this.log('loading the main jsx file')
+        this.log('Loading the main JSX File')
         scriptLoader.loadJSX('main.jsx')
 
         // some testing
@@ -36,7 +36,7 @@ class Session {
         // var fs = require('fs-extra')
         //console.log(fs)
 
-        this.log('session is inited')
+        this.log('Session is initiated!')
     }
 
 

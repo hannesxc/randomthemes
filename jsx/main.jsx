@@ -10,7 +10,7 @@ var themeText = doc.textFrames.pointText([50, doc.height - 100]);
 var themeText2 = doc.textFrames.pointText([50, doc.height - 150]);
 applyTextStyle(colorText);
 applyTextStyle(themeText);
-applyTextStyle(themeText2)
+applyTextStyle(themeText2);
 
 
 // Export file to Downloads folder
@@ -76,12 +76,12 @@ function showText(show) {
   if (show) {
     // Modify the textframes
     showCode = true;
-    colorText.contents = "Original Color: " + text1[0].join(", ") + "    Original HSL: " + text1[1].join(", ");
+    colorText.contents = "Original RGB: " + text1[0].join(", ") + "    Original HSL: " + text1[1].join(", ");
     colorText.move(layer, ElementPlacement.PLACEATBEGINNING);
 
     if (text1.length > 2) {
       themeText.contents = "Current Theme: " + text1[4][0] + "    Opacity: " + text1[4][1];
-      themeText2.contents = "Modified Color: " + text1[2].join(", ") + "   Modified HSL: " + text1[3].join(", ");
+      themeText2.contents = "Modified RGB: " + text1[2].join(", ") + "   Modified HSL: " + text1[3].join(", ");
       themeText.move(layer, ElementPlacement.PLACEATBEGINNING);
       themeText2.move(layer, ElementPlacement.PLACEATBEGINNING);
     }

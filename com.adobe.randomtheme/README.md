@@ -15,11 +15,11 @@ Client folder on the other hand, is mine. More information inside client/README.
 Make sure you have node installed prior to executing this command -  
 > `node createPackage.js`  
   
-This should copy the essential assets required for the functioning of your extension to the release folder (such as CSXS, index.html, jsx, client/assets/CSInterface.js, index.js, main.css, .debug).  
+This should copy the essential assets required for the functioning of your extension to the com.adobe.randomtheme folder (such as CSXS, index.html, jsx, client/assets/CSInterface.js, index.js, main.css, .debug).  
   
 ## Installation  
   
-You can either drag and drop this folder (if you wanna modify this app) or the release folder (if you just want to use the application) to this path inorder to get this extension working. Note, hierarchies are same, you don't need to modify anything -  
+You can either drag and drop this folder (if you wanna modify this app) or the com.adobe.randomtheme folder (if you just want to use the application) to this path inorder to get this extension working. Note, hierarchies are same, you don't need to modify anything -  
 > `C:\Users\UserName\AppData\Roaming\Adobe\CEP\extensions`  
   
 If you're using a signed package, you're fine. If not, and you're manually dropping the folders in your extensions directory, you have to enable debug mode in order to load unsigned extensions. Follow these steps:-  
